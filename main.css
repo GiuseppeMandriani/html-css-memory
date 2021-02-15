@@ -64,6 +64,8 @@ main .row{
     width: 100%;
 }
 
+
+
 /* TIPO DI CARTE  */
 
 .row .cards{
@@ -81,6 +83,7 @@ main .row{
 
 
 
+
 .row .cards:hover .Layover{
     display: block;
 }
@@ -90,6 +93,14 @@ main .row{
     background: white;
     cursor: pointer;
 }
+.cards.empty .Layover{
+    display: block;
+}
+
+.cards.empty{
+    background-image: none;
+}
+
 
 
 /* CARATTERISTICHE CARTE */
@@ -101,6 +112,7 @@ main .row{
 
 .cards-top img{
     width: 100%;
+
 }
 
 .cards-bottom{
@@ -108,15 +120,49 @@ main .row{
     width: 100%;
     height: 20%;
     text-align: center;
+
 }
 
 .Descrizione{
     display: inline-block;
     font-size: 2em;
-    color: rgb(230, 91, 218);
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+    
+}
+
+.Descrizione.Baloon{
+    color: rgb(230, 91, 218);
 
 }
+
+.Descrizione.Bicycle{
+    color: rgb(250, 137, 84);
+
+}
+
+.Descrizione.Cruise-ship{
+    color: rgb(70, 184, 230);
+
+}
+
+.Descrizione.Submarine{
+    color: rgb(50, 12, 218);
+
+}
+
+.Descrizione.Tractor{
+    color: rgb(145, 247, 114);
+
+}
+
+.Descrizione.Tram{
+    color: rgb(234, 248, 110);
+
+}
+
+
+
+
 
 /* FOOTER */
 footer{
