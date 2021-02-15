@@ -8,7 +8,7 @@
 }
 
 body{
-    background-color: aqua;
+    background-color: #00ffff6e;
     color: #fff;
 }
 
@@ -48,33 +48,64 @@ header{
 
 main{
         width: 90%;
-        height: 600px; 
-        /* fake height */
         padding: 20px;
         margin: 15px auto;
         border: 1px solid black;
 }
 
+/* RIGHE */
+
 main .row{
     width: 100%;
 }
 
-.row .cards{
+/* TIPO DI CARTE  */
+
+.row .hole-cards, .row .cards{
+    position: relative;
     float: left;
     width: calc(100% / 4 - 50px);
-    height: 200px;
+    height: 250px;
     margin: 10px 25px;
-    background-color: seagreen;
-    background-image: url(./img/pattern.png);
-    background-size: contain;
+    padding: 20px;
     border-radius: 15px;
     box-shadow: 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.row .cards:nth-child(2){
-    background-image: url(./img/noun_air_balloon_3134741.png);
-    background-size: cover;
+.row .cards{
+    background-color: rgba(255, 255, 255, 1);
+    background-image: url(./img/pattern.png);
+    background-size: contain;
 }
+
+
+/* CARATTERISTICHE CARTE */
+
+.cards-top{
+    width: 100%;
+    height: 80%;
+}
+
+.cards-top img{
+    width: 100%;
+}
+
+.cards-bottom{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+.Descrizione{
+    display: inline-block;
+    font-size: 2em;
+    color: rgb(230, 91, 218);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+
+}
+
+
 
 
 
