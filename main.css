@@ -3,6 +3,55 @@
 *{
     margin: 0%;
     padding: 0;
+    font-family: 'Nerko One', cursive;
     box-sizing: border-box;
 }
+
+body{
+    background-color: aqua;
+    color: #fff;
+}
+
+
+
+
+/* UTILITIES */
+
+.container{
+    width: 1200px;
+    max-width: 100%;
+    margin: 15px auto;
+    /* background-color: red; */
+}
+
+.Clearfix{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* HEADER */
+
+header{
+    padding: 15px;
+    text-align: center;
+    
+}
+#Title{
+    font-size: 5em;
+    text-transform: uppercase;
+    text-shadow: 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+/* MAIN */
+
+    main{
+        width: 90%;
+        height: 600px; 
+        /* fake height */
+        margin: 15px auto;
+        border: 1px solid black;
+    }
+
 
