@@ -21,13 +21,19 @@ body{
     width: 1200px;
     max-width: 100%;
     margin: 15px auto;
-    /* background-color: red; */
 }
 
 .Clearfix{
     content: "";
     display: table;
     clear: both;
+}
+
+.Layover{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    display: none;
 }
 
 /* HEADER */
@@ -47,10 +53,9 @@ header{
 /* MAIN */
 
 main{
-        width: 90%;
-        padding: 20px;
-        margin: 15px auto;
-        border: 1px solid black;
+     width: 90%;
+     padding: 20px;
+     margin: 15px auto;
 }
 
 /* RIGHE */
@@ -61,21 +66,29 @@ main .row{
 
 /* TIPO DI CARTE  */
 
-.row .hole-cards, .row .cards{
+.row .cards{
     position: relative;
     float: left;
     width: calc(100% / 4 - 50px);
     height: 250px;
     margin: 10px 25px;
-    padding: 20px;
+    background-image: url(./img/pattern.png);
+    background-size: contain;
     border-radius: 15px;
+    background-color: white;
     box-shadow: 10px 5px rgba(0, 0, 0, 0.5);
 }
 
-.row .cards{
-    background-color: rgba(255, 255, 255, 1);
-    background-image: url(./img/pattern.png);
-    background-size: contain;
+
+
+.row .cards:hover .Layover{
+    display: block;
+}
+
+.row .cards:hover{
+    background: transparent;
+    background: white;
+    cursor: pointer;
 }
 
 
@@ -103,6 +116,12 @@ main .row{
     color: rgb(230, 91, 218);
     text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 
+}
+
+/* FOOTER */
+footer{
+    text-align: center;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 
