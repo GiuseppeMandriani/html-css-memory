@@ -46,12 +46,36 @@ header{
 
 /* MAIN */
 
-    main{
+main{
         width: 90%;
         height: 600px; 
         /* fake height */
+        padding: 20px;
         margin: 15px auto;
         border: 1px solid black;
-    }
+}
+
+main .row{
+    width: 100%;
+}
+
+.row .cards{
+    float: left;
+    width: calc(100% / 4 - 50px);
+    height: 200px;
+    margin: 10px 25px;
+    background-color: seagreen;
+    background-image: url(./img/pattern.png);
+    background-size: contain;
+    border-radius: 15px;
+    box-shadow: 10px 5px rgba(0, 0, 0, 0.5);
+}
+
+.row .cards:nth-child(2){
+    background-image: url(./img/noun_air_balloon_3134741.png);
+    background-size: cover;
+}
+
+
 
 
